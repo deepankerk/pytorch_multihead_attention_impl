@@ -70,6 +70,32 @@ Passed: 5, Failed: 0, Skipped: 0
 All tests passed!
 ```
 
+## GPU Benchmark Results (NVIDIA A100-SXM4-40GB)
+
+```
+============================================================
+System Information
+============================================================
+PyTorch version: 2.0.1+cu117
+Python version: 3.11.12
+CUDA:
+  Available: True
+  Version: 11.7
+  Device: NVIDIA A100-SXM4-40GB
+  Total memory: 39.56 GB
+
+============================================================
+Verifying Attention Implementation
+============================================================
+Output shape: torch.Size([2, 8, 64]) (expected (2, 8, 64))
+Output shape correct: YES
+Weights shape: torch.Size([2, 4, 8, 8]) (expected (2, 4, 8, 8))
+Weights shape correct: YES
+Weights sum to 1 (per head): YES
+Matches PyTorch SDPA: YES
+Verification: PASSED
+```
+
 ## References
 
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762) - Original Transformer paper
