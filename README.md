@@ -1,4 +1,4 @@
-# Transformer Attention from Scratch
+# Transformer Attention Implementation from Scratch
 
 A scaffold for implementing Transformer attention mechanism in PyTorch, with runners for both Apple Silicon (MPS) and NVIDIA (CUDA) GPUs.
 
